@@ -357,3 +357,44 @@ body {
 .is-font-serif:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) figcaption {
     --font-multiplier: 1.15;
 }
+
+/* Pricing tiers */
+.gh-pricing {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.gh-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.gh-pricing-card {
+    border: 1px solid var(--color-light-gray);
+    border-radius: 16px;
+    padding: 24px;
+    background: var(--color-white);
+}
+
+.gh-pricing-card-name {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.gh-pricing-card-description {
+    color: var(--color-secondary-text);
+    margin-bottom: 16px;
+}
+
+.gh-pricing-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.gh-pricing-card-benefits {
+    margin: 0;
+    padding-left: 20px;
+}
