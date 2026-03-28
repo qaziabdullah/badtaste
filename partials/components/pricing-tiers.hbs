@@ -12,11 +12,9 @@
 
                             <div class="gh-pricing-card-actions">
                                 {{#if monthly_price}}
-                                    {{#match name "!=" @custom.yearly_only_tier_name}}
-                                        <a class="gh-btn gh-outline-btn" href="#/portal/signup/{{id}}/monthly" data-portal="signup/{{id}}/monthly">
-                                            {{price monthly_price currency=currency}}/{{t "month"}}
-                                        </a>
-                                    {{/match}}
+                                    <a class="gh-btn gh-outline-btn" href="#/portal/signup/{{id}}/monthly" data-portal="signup/{{id}}/monthly">
+                                        {{price monthly_price currency=currency}}/{{t "month"}}
+                                    </a>
                                 {{/if}}
                                 {{#if yearly_price}}
                                     <a class="gh-btn gh-primary-btn" href="#/portal/signup/{{id}}/yearly" data-portal="signup/{{id}}/yearly">
