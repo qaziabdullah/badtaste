@@ -4,6 +4,10 @@
 
 <main class="gh-main">
     {{> "components/article"}}
+
+    {{#match slug "pricing"}}
+        {{> "components/pricing-tiers"}}
+    {{/match}}
 </main>
 
 {{/post}}
